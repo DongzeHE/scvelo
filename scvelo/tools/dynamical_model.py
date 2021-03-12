@@ -422,7 +422,6 @@ def recover_dynamics(
     -------
     Returns or updates `adata`
     """
-    logg.info(f"use corrected model")
 
     adata = data.copy() if copy else data
 
