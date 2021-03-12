@@ -312,7 +312,8 @@ class DynamicsRecovery(BaseDynamics):
 
             self.t, self.tau, self.o = t, tau, o
             self.alpha, self.beta, self.gamma = alpha, beta, gamma
-            self.scaling, self.t_ = scaling, t_
+#             self.scaling, self.t_ = scaling, t_
+            self.t_ = t_
             new_pars = np.array([alpha, beta, gamma, t_, scaling])[:, None]
             self.pars = np.c_[self.pars, new_pars]
             self.loss.append(loss)
