@@ -830,7 +830,7 @@ class DynamicsRecovery(BaseDynamics):
             if "gamma" in new_vals_name:
                 self.gamma = gamma
             if "scaling" in new_vals_name:
-                self.scaling = scaling
+                # self.scaling = scaling
                 # self.rescale_invariant()
 
             self.pars = np.c_[
