@@ -925,7 +925,7 @@ def recover_dynamics_deprecated(
     -------
     Returns or updates `adata`
     """
-    print("using deprecated code!\n\n\n")
+    logg.info(f"use deprecated model")
     adata = data.copy() if copy else data
     logg.info("recovering dynamics", r=True)
 
