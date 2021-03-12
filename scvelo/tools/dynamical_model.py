@@ -97,8 +97,8 @@ class DynamicsRecovery(BaseDynamics):
         self.t, self.tau, self.o = self.get_time_assignment()
         self.loss = [self.get_loss()]
 
-        self.initialize_scaling(sight=0.5)
-        self.initialize_scaling(sight=0.1)
+        # self.initialize_scaling(sight=0.5)
+        # self.initialize_scaling(sight=0.1)
 
         self.steady_state_ratio = self.gamma / self.beta
 
@@ -117,7 +117,7 @@ class DynamicsRecovery(BaseDynamics):
 
             # pre-train with explicit time assignment
             self.fit_t_and_alpha()
-            self.fit_scaling_()
+            # self.fit_scaling_()
             self.fit_rates()
             self.fit_t_()
 
